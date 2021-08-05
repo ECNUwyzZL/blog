@@ -1,0 +1,9 @@
+{
+  "canisters": {
+    "www": {
+      "type": "assets",
+      "source": ["public",
+      "public/2021/07/27/领取免费的Dfinity Cycles"]
+    }
+  }
+}

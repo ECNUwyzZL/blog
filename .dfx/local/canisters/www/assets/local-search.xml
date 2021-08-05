@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>领取免费的Dfinity Cycles</title>
+    <link href="/2021/07/27/%E9%A2%86%E5%8F%96%E5%85%8D%E8%B4%B9%E7%9A%84Dfinity%20Cycles/"/>
+    <url>/2021/07/27/%E9%A2%86%E5%8F%96%E5%85%8D%E8%B4%B9%E7%9A%84Dfinity%20Cycles/</url>
+    
+    <content type="html"><![CDATA[<p>fleek官方为了推广开发者使用Dfinity来构建应用，(<a href="https://fleek.co/">https://fleek.co/</a>) 推出活动所有90天以上的github账户用户都可以通过绑定领取价值100美元的Dfinity cycles代币，该代币可以用作购买Dfinity的计算资源容器，来部署应用。</p><h2 id="安装Dfinity-SDK"><a href="#安装Dfinity-SDK" class="headerlink" title="安装Dfinity SDK"></a>安装Dfinity SDK</h2><p>环境：科学上网，命令行配置http_proxy<br>系统偏好设置-网络-高级-代理-SOCKS5代理<br><img src="https://intranetproxy.alipay.com/skylark/lark/0/2021/png/281366/1627371678013-953bc79a-bd93-4eb8-9e27-9611e6b461a2.png#align=left&display=inline&height=282&margin=%5Bobject%20Object%5D&name=image.png&originHeight=564&originWidth=1198&size=349818&status=done&style=none&width=599" alt="image.png"><br>执行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">export http_proxy=socks5h://127.0.0.1:13659<br>export https_proxy=socks5h://127.0.0.1:13659<br></code></pre></td></tr></table></figure><p>执行 </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sh -ci &quot;$(curl -fsSL https://sdk.dfinity.org/install.sh)&quot;<br></code></pre></td></tr></table></figure><p>全程回车确定</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">dfx -V<br></code></pre></td></tr></table></figure><p>看一下是否安装成功，成功后会显示<br><img src="https://intranetproxy.alipay.com/skylark/lark/0/2021/png/281366/1627362169621-7c2922e7-4e0b-4d0d-8ed9-5df7bd977141.png#align=left&display=inline&height=91&margin=%5Bobject%20Object%5D&name=image.png&originHeight=182&originWidth=450&size=37437&status=done&style=none&width=225" alt="image.png"></p><h2 id="生成DFX-Principal-ID"><a href="#生成DFX-Principal-ID" class="headerlink" title="生成DFX Principal ID"></a>生成DFX Principal ID</h2><p>命令行执行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">dfx identity get-principal<br></code></pre></td></tr></table></figure><p><img src="https://intranetproxy.alipay.com/skylark/lark/0/2021/png/281366/1627362302787-fc3e5899-18be-440d-bf6b-cbe210414c2c.png#align=left&display=inline&height=89&margin=%5Bobject%20Object%5D&name=image.png&originHeight=178&originWidth=1622&size=144154&status=done&style=none&width=811" alt="image.png"><br>复制生成ID<br>p436z-nnjpp-sbqgw-ggatw-4ozwr-fmekk-zvwko-lg3j7-boxd5-6ltq4-fae<br>该ID作为后续绑定服务器cycles钱包的设备标识码，在进行项目部署时仅有绑定钱包的机器可部署到公网网络</p><h3 id="领取服务器Cycles"><a href="#领取服务器Cycles" class="headerlink" title="领取服务器Cycles"></a>领取服务器Cycles</h3><p>访问<a href="https://faucet.dfinity.org/">https://faucet.dfinity.org/</a><br>1、输入Principal ID<br>2、选择Cycles wallet<br>3、生成新Cycles wallet<br><img src="https://intranetproxy.alipay.com/skylark/lark/0/2021/png/281366/1627362625348-2a48de2e-7e0d-4d0a-86dc-551cb95bd990.png#align=left&display=inline&height=670&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1340&originWidth=1022&size=444881&status=done&style=none&width=511" alt="image.png"><br>最后在Principal ID对应的机器上执行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">dfx identity --network ic set-wallet --force 7we6l-cqaaa-aaaah-aakmq-cai<br></code></pre></td></tr></table></figure><p>即可完成钱包绑定</p><h2 id="部署项目"><a href="#部署项目" class="headerlink" title="部署项目"></a>部署项目</h2><p><a href="https://sdk.dfinity.org/docs/quickstart/network-quickstart.html">https://sdk.dfinity.org/docs/quickstart/network-quickstart.html</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>

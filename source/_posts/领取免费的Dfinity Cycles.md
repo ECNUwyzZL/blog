@@ -1,6 +1,5 @@
----
-title: 领取免费的Dfinity Cycles
----
+# ---
+
 fleek官方为了推广开发者使用Dfinity来构建应用，(https://fleek.co/) 推出活动所有90天以上的github账户用户都可以通过绑定领取价值100美元的Dfinity cycles代币，该代币可以用作购买Dfinity的计算资源容器，来部署应用。
 
 ## 安装Dfinity SDK
@@ -44,4 +43,6 @@ dfx identity --network ic set-wallet --force 7we6l-cqaaa-aaaah-aakmq-cai
 即可完成钱包绑定
 ## 部署项目
 [https://sdk.dfinity.org/docs/quickstart/network-quickstart.html](https://sdk.dfinity.org/docs/quickstart/network-quickstart.html)
+
+# ---
 
